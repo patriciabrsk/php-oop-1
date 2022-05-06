@@ -32,16 +32,16 @@ class Movie {
 
 }
 
-$lotr = new Movie('The Lord of the Rings: The Fellowship of the Ring', 'United States', 'Peter Jackson', '2001');
-$blueVelvet = new Movie('Blue Velvet', 'United States', 'David Lynch', '1986');
+$firstMovie = new Movie('The Lord of the Rings: The Fellowship of the Ring', 'United States', 'Peter Jackson', '2001');
+$secondMovie = new Movie('Blue Velvet', 'United States', 'David Lynch', '1986');
 
-var_dump($lotr);
+var_dump($firstMovie);
 echo '<br>';
-var_dump($blueVelvet);
+var_dump($secondMovie);
 
 echo '<br>';
-echo $lotr->getTitle() . ' directed by ' . $lotr->getDirector();
+echo $firstMovie->getTitle() . ' , directed by ' . $firstMovie->getDirector();
 echo '<br>';
-echo $blueVelvet->getTitle() . ' - filmed in North Carolina, ' . $blueVelvet->getCountry();
+echo $secondMovie->getTitle() . ' - filmed in North Carolina, ' . $secondMovie->getCountry();
 
 ?>
